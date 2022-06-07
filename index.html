@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Infinite Loading Screen</title>
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+<style>
+
+
+h1 {
+font-family: Arial;
+font-size: 10vmin;
+text-align: center;
+margin:0;
+}
+
+h2 {
+font-family: Arial;
+font-size: 6vmin;
+text-align: center;
+margin:0;
+}
+
+p {
+text-align: center;
+}
+
+.bitotext {
+position: relative;
+margin: auto;
+top: 50px;
+width: 66vw;
+}
+
+.bigbox {
+  position: relative;
+  top: 5vh; bottom: 0; right: 0; left: 0; 
+}
+
+.loader {
+  margin: auto;
+  border: 3vmin solid #f3f3f3; /* Light grey */
+  border-top: 3vmin solid black;
+  border-radius: 50%;
+  width: 20vmin;
+  height: 20vmin;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.biggestbox {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body>
+<div class='biggestbox'>
+
+<div class='titl'>
+
+<h2><i>Welcome To</i></h2>
+<h1><i>The Infinite Loading Screen</i></h1>
+
+</div>
+
+<div class = 'bigbox'>
+    <div class="loader"></div>
+</div>
+
+<div class='bitotext'>
+    <br>
+    <br>
+    <p>This would be a good time to grab a snack, sleep, maybe call your mother.</p>
+    <p>Or just take a second to hang out. Catch your breath. Look out the window. Touch some grass.</p>
+    <p>This isn't going anywhere anytime soon.</p>
+    <p>You can relax now.</p>
+</div>
+
+</div>
+</body>
+</html>
